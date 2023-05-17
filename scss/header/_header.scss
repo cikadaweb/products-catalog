@@ -50,28 +50,6 @@
 .menu__link:hover {
   text-decoration: underline;
 }
-.header__button {
-  @include button-reset;
-}
-
-.header__button {
-  font-size: 0;
-  overflow: hidden;
-  width: 30px;
-  height: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 35px 35px;
-  padding: 14px 32px;
-}
-
-.header__button_dark-mode {
-  background-image: url(../img/svg/dark-mode.svg);
-}
-
-.header__button_light-mode {
-  background-image: url(../img/svg/light-mode.svg);
-}
 
 @media (max-width: 767px) {
   /* Отображение бургера */
@@ -166,9 +144,5 @@
   .menu__link {
     font-size: 25px;
     color: $white;
-  }
-
-  .header__buttons {
-    display: none;
   }
 }

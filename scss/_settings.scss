@@ -44,13 +44,44 @@ img {
     padding: 0 48px;
     margin: 0 auto;
 }
+
+.theme__button {
+    @include button-reset;
+}
+
+.theme__button {
+    font-size: 0;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    padding: 14px 32px;
+}
+
+.theme__button_dark-mode {
+    background-image: url(../img/svg/dark-mode.svg);
+}
+
+.theme__button_light-mode {
+    background-image: url(../img/svg/light-mode.svg);
+}
+
 @media (max-width: 560px) {
     .container {
         padding: 0 24px;
     }
 }
 
-// Подключение стилей шапки
+@media (max-width: 767px) {
+  .theme__controls_header {
+      display: none;
+  }
+}
+// Подключение стилей блока header
 @import './header/_header.scss';
 // Подключение стилей блока main
 @import './main/_main.scss';
+// Подключение стилей блока footer
+@import './footer/_footer.scss';
