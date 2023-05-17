@@ -51,4 +51,6 @@ img {
 }
 
 // Подключение стилей шапки
-@import './header/header.scss';
+@import './header/_header.scss';
+// Подключение стилей блока main
+@import './main/_main.scss';
