@@ -1,0 +1,174 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: $main-color;
+  min-height: 104px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__logo {
+  @include font(30px, 400, 1.2);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  z-index: 5;
+}
+
+.header__menu {}
+
+.header__burger {
+  display: none;
+}
+
+.menu__body {}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex: 1 0 auto;
+  padding: 0;
+  margin: 0 80px;
+}
+
+.menu__link {
+  @include font(25px, 400, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+.header__button {
+  @include button-reset;
+}
+
+.header__button {
+  font-size: 0;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  padding: 14px 32px;
+}
+
+.header__button_dark-mode {
+  background-image: url(../img/svg/dark-mode.svg);
+}
+
+.header__button_light-mode {
+  background-image: url(../img/svg/light-mode.svg);
+}
+
+@media (max-width: 767px) {
+  /* Отображение бургера */
+  .header__burger { 
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+
+  .header__burger span,
+  .header__burger::before,
+  .header__burger::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: $black;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: '';
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  /* Отображение бургера */
+
+  /* анимация крестика */
+  .header__burger.header__burger_active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+
+  .header__burger.header__burger_active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+
+  .header__burger.header__burger_active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  /* анимация крестика */
+
+    /* Делаем плашку для выезда меню слева */
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3 ease 0s;
+    overflow: auto; // чтобы если много ссылок, можно было скроллить
+    margin-top: 30px;
+  }
+
+  .menu__body.menu__body_active {
+    left: 0;
+  }
+
+  .menu__body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 104px;
+    background-color: #AAF8A3;
+    z-index: 2;
+  }
+
+  .menu__list {
+    flex-direction: column;
+  }
+
+  .menu__link {
+    font-size: 25px;
+    color: $white;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+}
