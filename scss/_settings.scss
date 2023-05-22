@@ -99,5 +99,7 @@ img {
 @import './header/_header.scss';
 // Подключение стилей блока main
 @import './main/_main.scss';
+// Подключение стилей scroll
+@import './scroll-up/scroll-up';
 // Подключение стилей блока footer
 @import './footer/_footer.scss';
