@@ -79,14 +79,13 @@
 
 .product-card__date {
   @include font(16px, 400, 1.2);
-  padding: 25px 25px 0;
   margin-bottom: 20px;
 }
 
 .product-card__price {
   @include font(21px, 600, 1);
-  padding: 25px 25px 0;
   text-align: right;
+  margin-bottom: 30px;
 }
 
 .product-card__btn {
