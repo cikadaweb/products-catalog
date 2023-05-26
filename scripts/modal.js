@@ -101,6 +101,58 @@ const modal = () => {
   //     div.style.height = "1000px";
   //     document.querySelector(`.${CLASS_LIST.MODAL_DIALOG_BODY}`).appendChild(div);
   //   });
+
+  // modal form
+
+  const quantityInput = document.querySelector(".modal-form__input");
+  const modalPlusButton = document.querySelector(".modal-form__btn_green");
+  const modalMinusButton = document.querySelector(".modal-form__btn_red");
+
+  modalPlusButton.addEventListener("click", () => {
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue > 0) {
+      quantityInput.value = currentValue + 1;
+    }
+  });
+
+  modalMinusButton.addEventListener("click", () => {
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+
+  quantityInput.addEventListener("input", () => {
+    const currentValue = parseInt(quantityInput.value);
+    if (currentValue < 1 || isNaN(currentValue)) {
+      quantityInput.value = 1;
+    }
+  });
+
+  const radioButtons = document.querySelectorAll(".radio__input");
+  let activeRadioButton;
+
+  radioButtons.forEach((radioButton) => {
+    radioButton.addEventListener("change", (event) => {
+      activeRadioButton = event.target.value;
+    });
+  });
+
+  const modalBuyBtn = document.querySelector(".modal__btn-buy-footer");
+  modalBuyBtn.addEventListener("click", (event) => {
+    let orderInfo = "";
+    if (activeRadioButton !== undefined) {
+      orderInfo += `Вы выбрали цвет: ${activeRadioButton}, в количестве ${quantityInput.value}`;
+    } else {
+      orderInfo += `Вы выбрали ${quantityInput.value} позиций`;
+    }
+    alert(`Заказ офомрлен!\n${orderInfo}`);
+    event.preventDefault();
+    const modal = event.target.closest(`.${CLASS_LIST.MODAL}`);
+    modal.classList.remove(CLASS_LIST.MODAL_ACTIVE);
+    unbindResizeOserver(modal);
+    modal.addEventListener("transitionend", showScroll);
+  });
 };
 
 modal();

@@ -169,7 +169,8 @@
                 <input
                   class="modal-form__input"
                   type="number"
-                  placeholder="1"
+                  min="1"
+                  value="1"
                 />
                 <button
                   class="modal-form__btn modal-form__btn_green"
@@ -183,16 +184,34 @@
             <fieldset class="modal-form__fieldset">
               <legend class="modal-form__legend">Выберите цвет</legend>
               <div class="modal-form__radiobuttons">
-                <label class="radio">
-                  <input class="radio__input" type="radio" name="color" />
+                <label class="radio" for="redRadio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="color"
+                    value="red"
+                    id="redRadio"
+                  />
                   <span class="radio__label radio__label_red">Красный</span>
                 </label>
-                <label class="radio">
-                  <input class="radio__input" type="radio" name="color" />
+                <label class="radio" for="greenRadio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="color"
+                    value="green"
+                    id="greenRadio"
+                  />
                   <span class="radio__label radio__label_green">Зеленый</span>
                 </label>
-                <label class="radio">
-                  <input class="radio__input" type="radio" name="color" />
+                <label class="radio" for="blueRadio">
+                  <input
+                    class="radio__input"
+                    type="radio"
+                    name="color"
+                    value="blue"
+                    id="blueRadio"
+                  />
                   <span class="radio__label radio__label_blue">Синий</span>
                 </label>
               </div>
@@ -212,7 +231,7 @@
         </div>
 
         <div class="modal__footer">
-          <button class="js-modal-close modal__btn-close-footer">
+          <button class="modal__btn-close-footer js-modal-close">
             Закрыть
           </button>
           <button class="modal__btn-buy-footer">Купить</button>
@@ -243,7 +262,7 @@
         </div>
 
         <div class="modal__footer">
-          <button class="js-modal-close modal__btn-close-footer">
+          <button class="modal__btn-close-footer js-modal-close">
             Закрыть
           </button>
         </div>
