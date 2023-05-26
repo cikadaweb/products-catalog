@@ -5,25 +5,78 @@
         "id": 1,
         "title": "Обойный клей Quelyd СПЕЦ-ФЛИЗЕЛИН 0,45 кг 30603168",
         "image": "img/glue/glue1.jpg",
-        "price": 622
+        "price": 622,
+        "date": "01.01.2023"
       },
       {
         "id": 2,
         "title": "Обойный клей Qualitiy универсальный 200 г 30 пакет 2827",
         "image": "img/glue/glue2.jpg",
-        "price": 120
+        "price": 120,
+        "date": "23.05.2023"
       },
       {
         "id": 3,
         "title": "Клей для обоев КМЦ 200 г 4607133680039",
         "image": "img/glue/glue3.jpg",
-        "price": 67
+        "price": 67,
+        "date": "12.05.2023"
       },
       {
         "id": 4,
         "title": "Обойный клей Metylan Винил Премиум без индикатора 200 г Б0023080",
         "image": "img/glue/glue4.jpg",
-        "price": 235
+        "price": 235,
+        "date": "18.05.2023"
+      },
+      {
+        "id": 5,
+        "title": "Универсальный клей Момент особопрочный 88, 125 мл, ШБ Б0008050",
+        "image": "img/glue/glue5.jpg",
+        "price": 215,
+        "date": "18.05.2023"
+      },
+      {
+        "id": 6,
+        "title": "Двухкомпонентный клей Interbond 25 g+100 ml Cyanoacrylate 00-00000190",
+        "image": "img/glue/glue6.jpg",
+        "price": 255,
+        "date": "13.05.2023"
+      },
+      {
+        "id": 7,
+        "title": "Клей РОГНЕДА ПОРОЛОН+, 0,75 Л 6 135289",
+        "image": "img/glue/glue7.jpg",
+        "price": 511,
+        "date": "18.05.2023"
+      },
+      {
+        "id": 8,
+        "title": "Обойный клей Quelyd СПЕЦ-ФЛИЗЕЛИН 0,45 кг 30603168",
+        "image": "img/glue/glue1.jpg",
+        "price": 622,
+        "date": "01.01.2023"
+      },
+      {
+        "id": 9,
+        "title": "Обойный клей Qualitiy универсальный 200 г 30 пакет 2827",
+        "image": "img/glue/glue2.jpg",
+        "price": 120,
+        "date": "23.05.2023"
+      },
+      {
+        "id": 10,
+        "title": "Клей для обоев КМЦ 200 г 4607133680039",
+        "image": "img/glue/glue3.jpg",
+        "price": 67,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 11,
+        "title": "Обойный клей Metylan Винил Премиум без индикатора 200 г Б0023080",
+        "image": "img/glue/glue4.jpg",
+        "price": 235,
+        "date": "18.05.2023"
       }
     ],
     "paint": [
@@ -31,31 +84,78 @@
         "id": 1,
         "title": "Краска DULUX ULTRA RESIST кухня ванная, матовая, база BW, 5 л 5757353",
         "image": "img/paint/paint1.jpg",
-        "price": 6240
+        "price": 6240,
+        "date": "12.05.2023"
       },
       {
         "id": 2,
         "title": "Краска для стен и потолков DULUX BINDO 7, износостойкая, матовая, белая, база BW 9 л 5302491",
         "image": "img/paint/paint2.jpg",
-        "price": 5534
+        "price": 5534,
+        "date": "12.05.2023"
       },
       {
         "id": 3,
         "title": "Краска для всех типов обоев DULUX EASY база BW 2,5л 5183562",
         "image": "img/paint/paint3.jpg",
-        "price": 2300
+        "price": 2300,
+        "date": "12.05.2023"
       },
       {
         "id": 4,
         "title": "Краска DULUX ОКНА И ДВЕРИ (база BС; 0,75 л) 5327290",
         "image": "img/paint/paint4.jpg",
-        "price": 1140
+        "price": 1140,
+        "date": "12.05.2023"
       },
       {
         "id": 5,
         "title": "Универсальная краска DULUX MASTER LUX AQUA 40 (база BW; акриловая; полуглянцевая; белый; 1 л) 5246546",
         "image": "img/paint/paint5.jpg",
-        "price": 1980
+        "price": 1980,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 6,
+        "title": "Краска DULUX ULTRA RESIST кухня ванная, матовая, база BW, 5 л 5757353",
+        "image": "img/paint/paint1.jpg",
+        "price": 6240,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 7,
+        "title": "Краска для стен и потолков DULUX BINDO 7, износостойкая, матовая, белая, база BW 9 л 5302491",
+        "image": "img/paint/paint2.jpg",
+        "price": 5534,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 8,
+        "title": "Краска для всех типов обоев DULUX EASY база BW 2,5л 5183562",
+        "image": "img/paint/paint3.jpg",
+        "price": 2300,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 9,
+        "title": "Краска DULUX ОКНА И ДВЕРИ (база BС; 0,75 л) 5327290",
+        "image": "img/paint/paint4.jpg",
+        "price": 1140,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 10,
+        "title": "Универсальная краска DULUX MASTER LUX AQUA 40 (база BW; акриловая; полуглянцевая; белый; 1 л) 5246546",
+        "image": "img/paint/paint5.jpg",
+        "price": 1980,
+        "date": "12.05.2023"
+      },
+      {
+        "id": 11,
+        "title": "Краска DULUX ULTRA RESIST кухня ванная, матовая, база BW, 5 л 5757353",
+        "image": "img/paint/paint1.jpg",
+        "price": 6240,
+        "date": "12.05.2023"
       }
     ],
     "wallpaper": [
@@ -63,19 +163,71 @@
         "id": 1,
         "title": "Обои Cosca Арт. L5009 6,2x0,91 м СПБ025322",
         "image": "img/wallpaper/wallpaper1.jpg",
-        "price": 1525
+        "price": 1525,
+        "date": "26.05.2023"
       },
       {
         "id": 2,
         "title": "Фотообои Onprint WFOREST FOX БО 4x2,7 м WFOREST FOX БО4Х2,7",
         "image": "img/wallpaper/wallpaper2.jpg",
-        "price": 8930
+        "price": 8930,
+        "date": "17.05.2023"
       },
       {
         "id": 3,
         "title": "Фотообои Onprint JUSTLEAF БО 4x2,7 м JUSTLEAF БО4Х2,7",
         "image": "img/wallpaper/wallpaper3.jpg",
-        "price": 4500
+        "price": 4500,
+        "date": "25.05.2023"
+      },
+      {
+        "id": 4,
+        "title": "Обои Cosca Арт. L5009 6,2x0,91 м СПБ025322",
+        "image": "img/wallpaper/wallpaper1.jpg",
+        "price": 1525,
+        "date": "26.05.2023"
+      },
+      {
+        "id": 5,
+        "title": "Фотообои Onprint WFOREST FOX БО 4x2,7 м WFOREST FOX БО4Х2,7",
+        "image": "img/wallpaper/wallpaper2.jpg",
+        "price": 8930,
+        "date": "17.05.2023"
+      },
+      {
+        "id": 6,
+        "title": "Фотообои Onprint JUSTLEAF БО 4x2,7 м JUSTLEAF БО4Х2,7",
+        "image": "img/wallpaper/wallpaper3.jpg",
+        "price": 4500,
+        "date": "25.05.2023"
+      },
+      {
+        "id": 7,
+        "title": "Обои Cosca Арт. L5009 6,2x0,91 м СПБ025322",
+        "image": "img/wallpaper/wallpaper1.jpg",
+        "price": 1525,
+        "date": "26.05.2023"
+      },
+      {
+        "id": 8,
+        "title": "Фотообои Onprint WFOREST FOX БО 4x2,7 м WFOREST FOX БО4Х2,7",
+        "image": "img/wallpaper/wallpaper2.jpg",
+        "price": 8930,
+        "date": "17.05.2023"
+      },
+      {
+        "id": 9,
+        "title": "Фотообои Onprint JUSTLEAF БО 4x2,7 м JUSTLEAF БО4Х2,7",
+        "image": "img/wallpaper/wallpaper3.jpg",
+        "price": 4500,
+        "date": "25.05.2023"
+      },
+      {
+        "id": 10,
+        "title": "Фотообои Onprint JUSTLEAF БО 4x2,7 м JUSTLEAF БО4Х2,7",
+        "image": "img/wallpaper/wallpaper3.jpg",
+        "price": 4500,
+        "date": "25.05.2023"
       }
     ]
   }
