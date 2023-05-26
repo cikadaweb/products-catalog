@@ -27,6 +27,9 @@
 .produtcts__column {
   width: calc(100% / 4) * 1;
   padding: 15px;
+  @include for-size(laptop-s) {
+      width: calc(100% / 3) * 1;
+    }
   @include for-size(tablet) {
     width: calc(100% / 2) * 1;
   }
