@@ -13,10 +13,11 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./scripts/burger.js" defer></script>
-    <script src="./scripts/theme-mode.js" defer></script>
-    <script src="./scripts/scroll-up.js" defer></script>
+    <script src="./scripts/themeMode.js" defer></script>
+    <script src="./scripts/scrollUp.js" defer></script>
     <script src="./scripts/modal.js" defer></script>
-    <script src="./scripts/smooth-scroll.js" defer></script>
+    <script src="./scripts/smoothScroll.js" defer></script>
+    <script src="./scripts//script.js" defer></script>
     <script src="./scripts/products/wallpapers.js" defer></script>
     <script src="./scripts/products/paint.js" defer></script>
     <script src="./scripts/products/glue.js" defer></script>
@@ -34,16 +35,27 @@
             <nav class="menu__body">
               <ul class="menu__list">
                 <li>
-                  <a href="#wallpaper" class="menu__link">Обои</a>
+                  <a
+                    class="menu__link"
+                    data-goto=".produtcts_wallpaper"
+                    href="#"
+                    >Обои</a
+                  >
                 </li>
                 <li>
-                  <a href="#paint" class="menu__link">Краски</a>
+                  <a class="menu__link" data-goto=".produtcts_paint" href="#"
+                    >Краски</a
+                  >
                 </li>
                 <li>
-                  <a href="#glue" class="menu__link">Клей</a>
+                  <a class="menu__link" data-goto=".produtcts_glue" href="#"
+                    >Клей</a
+                  >
                 </li>
                 <li>
-                  <a href="#aboutme" class="menu__link">Обо мне</a>
+                  <a class="menu__link js-modal-open" href="#modal-2">
+                    Обо мне
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -60,7 +72,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="produtcts produtcts_wallpaper" id="wallpaper">
+      <section class="produtcts produtcts_wallpaper">
         <div class="container">
           <h1 class="produtcts__title">Обои</h1>
           <div class="produtcts__count produtcts__count_wallpaper">
@@ -69,14 +81,14 @@
           <div class="produtcts__row produtcts__row_wallpaper"></div>
         </div>
       </section>
-      <section class="produtcts produtcts_paint" id="paint">
+      <section class="produtcts produtcts_paint">
         <div class="container">
           <h1 class="produtcts__title">Краски</h1>
           <div class="produtcts__count produtcts__count_paint">123 товаров</div>
           <div class="produtcts__row produtcts__row_paint"></div>
         </div>
       </section>
-      <section class="produtcts produtcts_glue" id="glue">
+      <section class="produtcts produtcts_glue">
         <div class="container">
           <h1 class="produtcts__title">Клей</h1>
           <div class="produtcts__count produtcts__count_glue">45 товаров</div>
@@ -101,22 +113,37 @@
         <nav class="footer__body">
           <ul class="footer__list">
             <li>
-              <a href="#wallpapers" class="menu__link footer__link">Обои</a>
+              <a
+                class="menu__link footer__link"
+                data-goto=".produtcts_wallpaper"
+                href="#"
+                >Обои</a
+              >
             </li>
             <li>
-              <a href="#paint" class="menu__link footer__link">Краски</a>
+              <a
+                class="menu__link footer__link"
+                data-goto=".produtcts_paint"
+                href="#"
+                >Краски</a
+              >
             </li>
             <li>
-              <a href="#glue" class="menu__link footer__link">Клей</a>
+              <a
+                class="menu__link footer__link"
+                data-goto=".produtcts_glue"
+                href="#"
+                >Клей</a
+              >
             </li>
             <li>
-              <a href="#aboutme" class="menu__link footer__link">Обо мне</a>
+              <a class="menu__link footer__link" href="#">Обо мне</a>
             </li>
           </ul>
         </nav>
       </div>
     </footer>
-    <div class="modal modal_m" id="modal-1">
+    <div class="modal" id="modal-1">
       <div class="modal__dialog">
         <div class="modal__header">
           <div class="modal__title">Покупка товара</div>
@@ -189,6 +216,36 @@
             Закрыть
           </button>
           <button class="modal__btn-buy-footer">Купить</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal-2">
+      <div class="modal__dialog">
+        <div class="modal__header">
+          <div class="modal__title">Обо мне</div>
+
+          <div class="modal__controls">
+            <button class="modal__btn-close js-modal-close">
+              <span>&times;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal__body">
+          <div class="modal__link">
+            Профиль на
+            <a href="https://github.com/cikadaweb" target="_blank">GitHub</a>
+          </div>
+          <div class="modal__link">
+            Связаться
+            <a href="mailto:adel.garipovazn@mail.ru" target="_blank">Mail</a>
+          </div>
+        </div>
+
+        <div class="modal__footer">
+          <button class="js-modal-close modal__btn-close-footer">
+            Закрыть
+          </button>
         </div>
       </div>
     </div>
