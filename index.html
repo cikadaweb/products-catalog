@@ -16,6 +16,7 @@
     <script src="./scripts/theme-mode.js" defer></script>
     <script src="./scripts/scroll-up.js" defer></script>
     <script src="./scripts/modal.js" defer></script>
+    <script src="./scripts/smooth-scroll.js" defer></script>
     <script src="./scripts/products/wallpapers.js" defer></script>
     <script src="./scripts/products/paint.js" defer></script>
     <script src="./scripts/products/glue.js" defer></script>
@@ -33,16 +34,16 @@
             <nav class="menu__body">
               <ul class="menu__list">
                 <li>
-                  <a href="#" class="menu__link">Обои</a>
+                  <a href="#wallpaper" class="menu__link">Обои</a>
                 </li>
                 <li>
-                  <a href="#" class="menu__link">Краски</a>
+                  <a href="#paint" class="menu__link">Краски</a>
                 </li>
                 <li>
-                  <a href="#" class="menu__link">Клей</a>
+                  <a href="#glue" class="menu__link">Клей</a>
                 </li>
                 <li>
-                  <a href="#" class="menu__link">Обо мне</a>
+                  <a href="#aboutme" class="menu__link">Обо мне</a>
                 </li>
               </ul>
             </nav>
@@ -59,7 +60,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="produtcts produtcts_wallpaper">
+      <section class="produtcts produtcts_wallpaper" id="wallpaper">
         <div class="container">
           <h1 class="produtcts__title">Обои</h1>
           <div class="produtcts__count produtcts__count_wallpaper">
@@ -68,14 +69,14 @@
           <div class="produtcts__row produtcts__row_wallpaper"></div>
         </div>
       </section>
-      <section class="produtcts produtcts_paint">
+      <section class="produtcts produtcts_paint" id="paint">
         <div class="container">
           <h1 class="produtcts__title">Краски</h1>
           <div class="produtcts__count produtcts__count_paint">123 товаров</div>
           <div class="produtcts__row produtcts__row_paint"></div>
         </div>
       </section>
-      <section class="produtcts produtcts_paint">
+      <section class="produtcts produtcts_glue" id="glue">
         <div class="container">
           <h1 class="produtcts__title">Клей</h1>
           <div class="produtcts__count produtcts__count_glue">45 товаров</div>
@@ -100,16 +101,16 @@
         <nav class="footer__body">
           <ul class="footer__list">
             <li>
-              <a href="#" class="footer__link">Обои</a>
+              <a href="#wallpapers" class="menu__link footer__link">Обои</a>
             </li>
             <li>
-              <a href="#" class="footer__link">Краски</a>
+              <a href="#paint" class="menu__link footer__link">Краски</a>
             </li>
             <li>
-              <a href="#" class="footer__link">Клей</a>
+              <a href="#glue" class="menu__link footer__link">Клей</a>
             </li>
             <li>
-              <a href="#" class="footer__link">Обо мне</a>
+              <a href="#aboutme" class="menu__link footer__link">Обо мне</a>
             </li>
           </ul>
         </nav>
