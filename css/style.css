@@ -1054,6 +1054,11 @@ img {
   width: 100%;
   min-height: 100px;
   resize: vertical;
+  padding: 10px;
+}
+
+.modal-form__textarea:focus {
+  outline: 2px solid #CED4DA;
 }
 
 .radio__input {
