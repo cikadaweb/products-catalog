@@ -92,11 +92,11 @@ const unbindResizeOserver = (modal) => {
   resizeObserver = null;
 };
 
-document
-  .getElementById("js-add-content-temp")
-  .addEventListener("click", (event) => {
-    const div = document.createElement("div");
-    div.textContent = "Text content";
-    div.style.height = "1000px";
-    document.querySelector(`.${CLASS_LIST.MODAL_DIALOG_BODY}`).appendChild(div);
-  });
+// document
+//   .getElementById("js-add-content-temp")
+//   .addEventListener("click", (event) => {
+//     const div = document.createElement("div");
+//     div.textContent = "Text content";
+//     div.style.height = "1000px";
+//     document.querySelector(`.${CLASS_LIST.MODAL_DIALOG_BODY}`).appendChild(div);
+//   });
