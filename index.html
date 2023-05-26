@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/burger.js" defer></script>
+    <script src="./scripts/theme-mode.js" defer></script>
+    <script src="./scripts/scroll-up.js" defer></script>
+    <script src="./scripts/modal.js" defer></script>
+    <script src="./scripts/products.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -76,7 +81,9 @@
                   <div class="product-card__price">6000 ₽</div>
                 </div>
                 <div class="product-card__footer">
-                  <button class="product-card__btn">Купить</button>
+                  <a class="product-card__btn js-modal-open" href="#modal-1">
+                    Купить
+                  </a>
                 </div>
               </div>
             </div>
@@ -99,7 +106,9 @@
                   <div class="product-card__price">6000 ₽</div>
                 </div>
                 <div class="product-card__footer">
-                  <button class="product-card__btn">Купить</button>
+                  <a class="product-card__btn js-modal-open" href="#modal-1"
+                    >Купить</a
+                  >
                 </div>
               </div>
             </div>
@@ -122,7 +131,9 @@
                   <div class="product-card__price">6000 ₽</div>
                 </div>
                 <div class="product-card__footer">
-                  <button class="product-card__btn">Купить</button>
+                  <a class="product-card__btn js-modal-open" href="#modal-1"
+                    >Купить</a
+                  >
                 </div>
               </div>
             </div>
@@ -145,7 +156,9 @@
                   <div class="product-card__price">6000 ₽</div>
                 </div>
                 <div class="product-card__footer">
-                  <button class="product-card__btn">Купить</button>
+                  <a class="product-card__btn js-modal-open" href="#modal-1"
+                    >Купить</a
+                  >
                 </div>
               </div>
             </div>
@@ -168,7 +181,9 @@
                   <div class="product-card__price">6000 ₽</div>
                 </div>
                 <div class="product-card__footer">
-                  <button class="product-card__btn">Купить</button>
+                  <a class="product-card__btn js-modal-open" href="#modal-1"
+                    >Купить</a
+                  >
                 </div>
               </div>
             </div>
@@ -191,7 +206,9 @@
                   <div class="product-card__price">6000 ₽</div>
                 </div>
                 <div class="product-card__footer">
-                  <button class="product-card__btn">Купить</button>
+                  <a class="product-card__btn js-modal-open" href="#modal-1"
+                    >Купить</a
+                  >
                 </div>
               </div>
             </div>
@@ -231,8 +248,81 @@
         </nav>
       </div>
     </footer>
-    <script src="./scripts/burger.js"></script>
-    <script src="./scripts/theme-mode.js"></script>
-    <script src="./scripts/scroll-up.js"></script>
+    <div class="modal modal_m modal_active" id="modal-1">
+      <div class="modal__dialog">
+        <div class="modal__header">
+          <div class="modal__title">Покупка товара</div>
+
+          <div class="modal__controls">
+            <button class="modal__btn-close js-modal-close">
+              <span>&times;</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal__body">
+          <form class="modal-form" action="">
+            <fieldset class="modal-form__fieldset">
+              <legend class="modal-form__legend">Количество</legend>
+              <div class="modal-form__counter">
+                <button
+                  class="modal-form__btn modal-form__btn_red"
+                  type="button"
+                >
+                  &#8722;
+                </button>
+                <input
+                  class="modal-form__input"
+                  type="number"
+                  placeholder="1"
+                />
+                <button
+                  class="modal-form__btn modal-form__btn_green"
+                  type="button"
+                >
+                  &#43;
+                </button>
+              </div>
+            </fieldset>
+
+            <fieldset class="modal-form__fieldset">
+              <legend class="modal-form__legend">Выберите цвет</legend>
+              <div class="modal-form__radiobuttons">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="color" />
+                  <span class="radio__label radio__label_red">Красный</span>
+                </label>
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="color" />
+                  <span class="radio__label radio__label_green">Зеленый</span>
+                </label>
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="color" />
+                  <span class="radio__label radio__label_blue">Синий</span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="modal-form__fieldset">
+              <legend class="modal-form__legend">Комментарий</legend>
+              <textarea
+                class="modal-form__textarea"
+                name="comment"
+                id=""
+                cols="30"
+                rows="10"
+              ></textarea>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="modal__footer">
+          <button class="js-modal-close modal__btn-close-footer">
+            Закрыть
+          </button>
+          <button class="modal__btn-buy-footer">Купить</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

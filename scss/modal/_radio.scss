@@ -1,0 +1,39 @@
+.radio {
+
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.radio__input:focus+.radio__label,
+.radio__input:checked+.radio__label {
+  color: #241D1C;
+  background-color: #F6F3E3;
+}
+
+.radio__label {
+  display: inline-block;
+  @include font(14px, 400, 1);
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 36px;
+  cursor: pointer;
+}
+
+.radio__label_red {
+  color: $red-btn;
+  border: 1px solid $red-btn;
+}
+
+.radio__label_green {
+  color: $green-btn;
+  border: 1px solid $green-btn;
+}
+
+.radio__label_blue {
+  color: $blue-btn;
+  border: 1px solid $blue-btn;
+}
