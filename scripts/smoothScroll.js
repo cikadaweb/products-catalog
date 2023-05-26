@@ -8,9 +8,9 @@ const smoothScroll = () => {
       menuLink.addEventListener("click", (event) => {
         event.preventDefault();
 
-        document.body.classList.toggle("body_lock");
-        burger.classList.toggle("header__burger_active");
-        menuBody.classList.toggle("menu__body_active");
+        document.body.classList.remove("body_lock");
+        burger.classList.remove("header__burger_active");
+        menuBody.classList.remove("menu__body_active");
 
         const menuLink = event.target;
         if (
