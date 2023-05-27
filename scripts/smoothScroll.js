@@ -2,15 +2,19 @@ const smoothScroll = () => {
   const menuLinks = document.querySelectorAll(".menu__link[data-goto]");
   const burger = document.querySelector(".header__burger");
   const menuBody = document.querySelector(".menu__body");
+  const logoLink = document.querySelector(".header__logo");
+  const allLinks = [...menuLinks, logoLink];
 
-  if (menuLinks.length > 0) {
-    menuLinks.forEach((menuLink) => {
+  if (allLinks.length > 0) {
+    allLinks.forEach((menuLink) => {
       menuLink.addEventListener("click", (event) => {
         event.preventDefault();
 
+        //
         document.body.classList.remove("body_lock");
         burger.classList.remove("header__burger_active");
         menuBody.classList.remove("menu__body_active");
+        //
 
         const menuLink = event.target;
         if (
