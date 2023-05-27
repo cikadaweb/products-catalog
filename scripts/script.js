@@ -37,3 +37,19 @@ function updateModalClass() {
 
 window.addEventListener("load", updateModalClass);
 window.addEventListener("resize", updateModalClass);
+
+products({
+  dbName: "wallpaper.json",
+  rowBlockName: ".produtcts__row_wallpaper",
+  titleBlockName: ".produtcts__count_wallpaper",
+});
+products({
+  dbName: "glue.json",
+  rowBlockName: ".produtcts__row_glue",
+  titleBlockName: ".produtcts__count_glue",
+});
+products({
+  dbName: "paint.json",
+  rowBlockName: ".produtcts__row_paint",
+  titleBlockName: ".produtcts__count_paint",
+});

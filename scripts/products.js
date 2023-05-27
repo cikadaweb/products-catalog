@@ -1,9 +1,9 @@
-const glue = () => {
-  const produtctsRowGlue = document.querySelector(".produtcts__row_glue");
+const products = ({ dbName, rowBlockName, titleBlockName }) => {
+  const produtctsRowBlock = document.querySelector(`${rowBlockName}`);
 
   const changeTitle = (count) => {
     document.querySelector(
-      ".produtcts__count_glue"
+      `${titleBlockName}`
     ).textContent = `${count} позиции`;
   };
 
@@ -72,13 +72,13 @@ const glue = () => {
           </div>
         </div>
       `;
-      produtctsRowGlue.append(div);
+      produtctsRowBlock.append(div);
     });
   };
 
   const fetchData = async () => {
     const response = await fetch(
-      "https://products-catalog-7b75d-default-rtdb.firebaseio.com/db/glue.json"
+      `https://products-catalog-7b75d-default-rtdb.firebaseio.com/db/${dbName}`
     );
     const data = await response.json();
     changeTitle(data.length);
@@ -87,5 +87,3 @@ const glue = () => {
 
   fetchData();
 };
-
-glue();
