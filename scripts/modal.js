@@ -138,14 +138,30 @@ const modal = () => {
     });
   });
 
+  const textarea = document.querySelector(".modal-form__textarea");
+  const charCount = document.querySelector(".modal-form__textarea-counter");
+
+  textarea.addEventListener("input", (event) => {
+    const textareValue = event.target.value;
+
+    const maxLength = 2000;
+
+    if (textareValue.length > maxLength) {
+      event.target.value = textareValue.slice(0, maxLength);
+    }
+
+    charCount.textContent = `Количетво символов: ${textareValue.length}`;
+  });
+
   const modalBuyBtn = document.querySelector(".modal__btn-buy-footer");
   modalBuyBtn.addEventListener("click", (event) => {
     let orderInfo = "";
     if (activeRadioButton !== undefined) {
-      orderInfo += `Вы выбрали цвет: ${activeRadioButton}, в количестве ${quantityInput.value}`;
+      orderInfo += `Вы выбрали цвет: ${activeRadioButton}, в количестве ${quantityInput.value}\n`;
     } else {
-      orderInfo += `Вы выбрали ${quantityInput.value} позиций`;
+      orderInfo += `Вы выбрали ${quantityInput.value} позиций\n`;
     }
+    orderInfo += `Комментарий: ${textarea.value}`;
     alert(`Заказ офомрлен!\n${orderInfo}`);
     event.preventDefault();
     const modal = event.target.closest(`.${CLASS_LIST.MODAL}`);
