@@ -52,10 +52,9 @@
 }
 
 @media (max-width: 767px) {
-  /* Отображение бургера */
   .header__burger { 
-    z-index: 5;
     display: block;
+    z-index: 5;
     position: relative;
     width: 30px;
     height: 18px;
@@ -90,9 +89,7 @@
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
-  /* Отображение бургера */
 
-  /* анимация крестика */
   .header__burger.header__burger_active span {
     transform: scale(0) translate(0px, -50%);
   }
@@ -106,9 +103,7 @@
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
   }
-  /* анимация крестика */
 
-    /* Делаем плашку для выезда меню слева */
   .menu__body {
     position: fixed;
     top: 0;
@@ -118,7 +113,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     padding: 100px 30px 30px 30px;
     transition: left 0.3 ease 0s;
-    overflow: auto; // чтобы если много ссылок, можно было скроллить
+    overflow: auto;
     margin-top: 30px;
   }
 
